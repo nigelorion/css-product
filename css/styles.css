@@ -6,6 +6,10 @@ html {
   box-sizing: inherit;
 }
 
+#van1, #van-2, #beachVan {
+  display: none;
+}
+
 #wrapper {
   background-image: url('../img/trees.jpg');
   background-size: cover;
@@ -19,9 +23,11 @@ html {
   top: 0;
   left: 0;
   font-family: 'Headland One', serif;
-  color: rgba(196, 100, 100, 0.87);
+  /*color: rgba(196, 100, 100, 0.87);*/
+  color: rgba(0, 0, 0, 0.78);
   z-index: -1;
 }
+
 
 #navbar {
   position: absolute;
@@ -36,10 +42,13 @@ html {
 #navbar li {
   text-transform: uppercase;
   list-style-type: none;
-  display: inline-block;
   margin-left: 50px;
   margin-right: 50px;
   font-size: 30pt;
+  display: inline-block;
+  left: 50%;
+  
+
 
 }
 
@@ -139,8 +148,8 @@ textarea {
 
 #gallery {
   position: relative;
-  top: 70%;
   left: 50%;
+  display: inline-block;
   transform: translate(-50%, 0);
   overflow: hidden;
 }
