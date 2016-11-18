@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#wrapper {
+  background-image: url('../img/trees.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0;
+  top: 0;
+  left: 0;
+  font-family: 'Headland One', serif;
+}
+
+/*#navbar {
+  background-color: rgba(224, 169, 104, 0.34);
+  position: fixed;
+  top: 0;
+  width: 80%;
+  margin-top: 10%;
+  list-style-type: none;
+  border-radius: 5px;
+  overflow: hidden;
+
+}*/
+#navbar {
+  position: fixed;
+  top: 0;
+  background-color: rgba(121, 121, 121, 0.5);
+  width: 100%;
+  height: 10%;
+  text-align: center;
+
+
+
+}
+
+#navbar ul {
+  position: relative;;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+
+/*#navbar ul {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+      display: inline;
+}*/
+
+#navbar li {
+  text-transform: uppercase;
+  list-style-type: none;
+  display: inline;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30pt;
+}
+
+li:hover {
+  cursor: pointer;
+
+  color: rgba(0, 0, 0, 0.48);
+}
+
+
+#product-image {
+  position: absolute;
+
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+
+#logo {
+
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 22%;
+  transform: translate(-22%, 0);
+  overflow: hidden;
+
+}
+
+#logo h1 {
+  font-size: 50pt;
+}
+
+#about {
+  background-color: rgba(121, 121, 121, 0.5);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+  display: none;
+}
