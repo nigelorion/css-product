@@ -47,7 +47,7 @@ html {
   font-size: 30pt;
   display: inline-block;
   left: 50%;
-  
+
 
 
 }
@@ -143,9 +143,11 @@ textarea {
   float: left;
   margin: 10px;
   position: relative;
-
 }
 
+#gallery img:hover {
+  filter: grayscale(80%);
+}
 #gallery {
   position: relative;
   left: 50%;

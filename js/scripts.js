@@ -15,4 +15,8 @@ $(document).ready(function() {
     $("#pricing").fadeIn();
     });
 
+  $('#gallery img').click(function(){
+  $("#driving").attr('src',$(this).attr('src').replace('thumb','large'));
+});
+
 });
