@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 
 }
 *, *:before, *:after {
@@ -12,7 +11,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  background-position: center;
   height: 100%;
   width: 100%;
   overflow: auto;
@@ -21,27 +19,18 @@ html {
   top: 0;
   left: 0;
   font-family: 'Headland One', serif;
+  color: rgba(196, 100, 100, 0.87);
+  z-index: -1;
 }
 
 #navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   background-color: rgba(121, 121, 121, 0.5);
   width: 100%;
   height: 10%;
-  text-align: center;
   z-index: 1;
-}
-
-#navbar ul {
-  position: relative;
-  overflow: hidden;
-  color: rgb(255, 255, 255);
   text-align: center;
-  padding: 0;
-  margin: 0;
-  top: 50%;
-  transform: translate(0, -50%);
 }
 
 #navbar li {
@@ -51,6 +40,7 @@ html {
   margin-left: 50px;
   margin-right: 50px;
   font-size: 30pt;
+
 }
 
 li:hover {
@@ -62,8 +52,12 @@ li:hover {
   position: absolute;
   top: 20%;
   left: 50%;
+  width: 800px;
+  height: 534px;
   transform: translate(-50%, 0);
-  overflow: hidden;
+
+
+
 }
 
 #logo {
@@ -79,30 +73,59 @@ li:hover {
   font-size: 50pt;
 }
 
-#about {
+#contact, #about, #pricing {
   background-color: rgba(121, 121, 121, 0.5);
   position: absolute;
   top: 20%;
   left: 50%;
-  min-width: 800px;
-  min-height: 534px;
+  width: 800px;
+  height: 534px;
   transform: translate(-50%, 0);
   overflow: hidden;
+  text-align: center;
+  list-style: none;
   display: none;
-
 }
 
-#contact {
-  background-color: rgba(121, 121, 121, 0.5);
+button {
   position: absolute;
-  top: 20%;
+  width: 30%;
+  height: 50px;
+  border: none;
+  background: rgba(127, 174, 217, 0.3);
+  font-size: 20pt;
+  color: white;
+  top: 75%;
   left: 50%;
-  min-width: 800px;
-  min-height: 534px;
-  transform: translate(-50%, 0);
-  overflow: hidden;
-  display: none;
+  margin-right: -50%;
+  transform: translate(-50%, 50%);
+}
 
+button:hover {
+  background: rgba(78, 78, 78, 0.43);
+  color: rgba(139, 139, 139, 0.63);
+}
+button:focus {
+  outline-width: 0;
+}
+
+input, textarea {
+  position: absolute;
+  font-size: 20pt;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 50%);
+  border: none;
+  background-color: rgba(128, 128, 128, 0.41);
+  color: rgba(180, 182, 180, 0.31);
+}
+input, textarea:focus {
+  outline: rgba(110, 110, 110, 0.61);
+  color: rgb(79, 79, 79);
+}
+
+textarea {
+  min-height: 200px;
 
 }
 
@@ -120,41 +143,10 @@ li:hover {
   left: 50%;
   transform: translate(-50%, 0);
   overflow: hidden;
-
 }
 
-/*img {
-  animation-name: cf4FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-  animation-direction: alternate;
-}
+#pricing, #about {
+  color: rgb(215, 215, 215);
+  padding: 20px;
 
-@keyframes cf4FadeInOut {
-  0% {
-    opacity:1;
-  }
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
 }
-
-#product-image img:nth-of-type(1) {
-  animation-delay: 6s;
-}
-#product-image img:nth-of-type(2) {
-  animation-delay: 4s;
-}
-#product-image img:nth-of-type(3) {
-  animation-delay: 2s;
-}*/
