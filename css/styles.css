@@ -89,6 +89,7 @@ li:hover {
   transform: translate(-50%, 0);
   overflow: hidden;
   display: none;
+
 }
 
 #contact {
@@ -102,16 +103,19 @@ li:hover {
   overflow: hidden;
   display: none;
 
+
 }
 
 #gallery img  {
   max-width: 150px;
   float: left;
   margin: 10px;
+  position: relative;
+
 }
 
 #gallery {
-  position: absolute;
+  position: relative;
   top: 70%;
   left: 50%;
   transform: translate(-50%, 0);
