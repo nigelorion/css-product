@@ -54,7 +54,7 @@ html {
 
 li:hover {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.48);
+  color: rgba(0, 0, 0, 0.28);
 }
 
 #product-image {
@@ -81,6 +81,11 @@ li:hover {
   transform: translate(-22%, 0);
   overflow: hidden;
   margin: 0 auto;
+}
+
+#logo::before {
+  content: "Taking you to the far reaches of nature!";
+  display: block;
 }
 
 
@@ -156,6 +161,18 @@ textarea {
   filter: grayscale(80%);
   filter: opacity(.5);
 }
+
+img::after {
+  content: "";
+  display: block;
+
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.67);
+}
+
+
+
 #gallery {
   position: relative;
   left: 50%;
